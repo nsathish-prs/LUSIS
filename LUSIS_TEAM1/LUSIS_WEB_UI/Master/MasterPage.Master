@@ -1,0 +1,281 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="LUSIS_WEB_UI.Master.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../Scripts/bootstrap-datepicker.js" type="text/javascript"></script>
+
+    <title>Logic University Stationary Store Management System</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../Styles/Master/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="../Styles/Master/sb-admin.css" rel="stylesheet" />
+    <%--<link href="../Styles/Site.css" rel="stylesheet" type="text/css" />--%>
+<style>
+.tablereq
+{
+    border-bottom: 1px solid black;
+}
+</style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body onbeforeunload="Logout()" onclick="clicked=true;" style="background:url(../Master/bgimage.png) repeat fixed -1500px 95px rgba(0, 0, 0, 0)">
+
+    <form id="form1" runat="server">
+
+    <div id="wrapper">
+
+    
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <asp:LinkButton ID="LnkHome" runat="server" class="navbar-brand" 
+                    onclick="LnkHome_Click"><img src="../Styles/Master/logo.jpg"></asp:LinkButton>
+            </div>
+        
+            <ul class="nav navbar-right top-nav">
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><asp:Label ID="LblUname" runat="server" Text="User Name (Role)"></asp:Label><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <asp:LinkButton ID="LnkLogout" runat="server" onclick="LnkLogout_Click">Log Out</asp:LinkButton><i class="fa fa-fw fa-power-off"></i>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+       
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+
+                    <%if(Convert.ToString(Session["Role"])=="Clerk") { %>
+
+                        <li>
+                            <a href="../Views/storeNewRequisitions.aspx"><i class="fa fa-fw fa-dashboard"></i> New Requisitions</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeRetrievalList.aspx"><i class="fa fa-fw fa-dashboard"></i> Retrieval List</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptDisbursementLists.aspx"><i class="fa fa-fw fa-dashboard"></i> Disbursement Lists</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storePurchaseRequired.aspx"><i class="fa fa-fw fa-dashboard"></i> Purchase Required</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storePOList.aspx"><i class="fa fa-fw fa-dashboard"></i> Purchase Orders</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeCheckInventory.aspx?N=0"><i class="fa fa-fw fa-dashboard"></i> New Discrepancy</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeVoucherList.aspx"><i class="fa fa-fw fa-dashboard"></i> Discrepancy List</a>
+                        </li>
+
+                    <% } else if(Convert.ToString(Session["Role"])=="Supervisor") { %>
+
+                        <li>
+                            <a href="../Views/storeMaintainSuppliers.aspx"><i class="fa fa-fw fa-dashboard"></i> Maintain Suppliers</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeMaintainItem.aspx"><i class="fa fa-fw fa-dashboard"></i> Maintain Catalog</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storePOList.aspx"><i class="fa fa-fw fa-dashboard"></i> Purchase Orders</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeGenerateReport.aspx"><i class="fa fa-fw fa-dashboard"></i> Generate Report</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeAppVoucherList.aspx"><i class="fa fa-fw fa-dashboard"></i> Approve Discrepancy</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeVoucherList.aspx"><i class="fa fa-fw fa-dashboard"></i> Discrepancy List</a>
+                        </li>
+
+                    <% } else if(Convert.ToString(Session["Role"])=="Manager") { %>
+
+                        <li>
+                            <a href="../Views/storeGenerateReport.aspx"><i class="fa fa-fw fa-dashboard"></i> Generate Report</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeAppVoucherList.aspx"><i class="fa fa-fw fa-dashboard"></i> Approve Discrepancy</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/storeVoucherList.aspx"><i class="fa fa-fw fa-dashboard"></i> Discrepancy List</a>
+                        </li>
+
+                    <% } else if(Convert.ToString(Session["Role"])=="Employee") { %>
+
+                        <li>
+                            <a href="../Views/DeptNewRequisition.aspx?N=0"><i class="fa fa-fw fa-dashboard"></i> New Requisition</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptRequisitionList.aspx"><i class="fa fa-fw fa-dashboard"></i> View Requisition</a>
+                        </li>
+
+                    <% } else if(Convert.ToString(Session["Role"])=="DeptHead") { %>
+
+                        <li>
+                            <a href="../Views/DeptDisbursementLists.aspx"><i class="fa fa-fw fa-dashboard"></i> Disbursement Lists</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptAppRequisitionList.aspx"><i class="fa fa-fw fa-dashboard"></i> Approve Requisition</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../Views/DeptRequisitionList.aspx"><i class="fa fa-fw fa-dashboard"></i> View Requisition</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptDelegate.aspx"><i class="fa fa-fw fa-dashboard"></i> Delegate Authority</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptDetails.aspx"><i class="fa fa-fw fa-dashboard"></i> Department Details</a>
+                        </li>
+
+
+                    <% } else if(Convert.ToString(Session["Role"])=="Delegate") { %>
+
+                        <li>
+                            <a href="../Views/DeptDisbursementLists.aspx"><i class="fa fa-fw fa-dashboard"></i> Disbursement Lists</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptAppRequisitionList.aspx"><i class="fa fa-fw fa-dashboard"></i> Approve Requisition</a>
+                        </li>
+                         
+                        <li>
+                            <a href="../Views/DeptRequisitionList.aspx"><i class="fa fa-fw fa-dashboard"></i> View Requisition</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptDelegate.aspx"><i class="fa fa-fw fa-dashboard"></i> Delegate Authority</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptDetails.aspx"><i class="fa fa-fw fa-dashboard"></i> Department Details</a>
+                        </li>
+
+
+                    <%} else if(Convert.ToString(Session["Role"])=="Representative") { %>
+
+                        <li>
+                            <a href="../Views/DeptNewRequisition.aspx?N=0"><i class="fa fa-fw fa-dashboard"></i> New Requisition</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptRequisitionList.aspx"><i class="fa fa-fw fa-dashboard"></i> View Requisition</a>
+                        </li>
+
+                        <li>
+                            <a href="../Views/DeptDisbursementLists.aspx"><i class="fa fa-fw fa-dashboard"></i> Disbursement Lists</a>
+                        </li>
+
+                    <%} else { %>
+
+                        <li>None</li>
+
+                    <% } %>                  
+
+                </ul>
+            </div>
+         
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                
+             
+ 
+                <div class="row">
+                    <div class="col-lg-12">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                               
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Donut Chart</h3>
+                            </div>
+                            <div class="panel-body">
+                               Panel Body
+                            </div>
+                        </div>
+
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    
+                    <%--<div class="col-lg-6">
+                        
+                    </div>--%>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../Scripts/Master/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Scripts/Master/bootstrap.min.js"></script>
+
+    <script src="../Scripts/Master/logout.js"></script>
+    </form>
+
+</body>
+</html>

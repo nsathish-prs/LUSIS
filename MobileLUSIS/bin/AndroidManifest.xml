@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.edu.nus.iss.mobilelusis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".store.RetrievalActivity"
+            android:label="@string/title_activity_retrieval"
+            android:parentActivityName=".MenuActivity" >
+        </activity>
+        <activity
+            android:name=".DisbursementActivity"
+            android:label="@string/title_activity_disbursement" >
+        </activity>
+        <activity
+            android:name=".RaiseVoucherActivity"
+            android:label="@string/title_activity_raise_voucher" >
+        </activity>
+        <activity
+            android:name=".ViewVoucherActivity"
+            android:label="@string/title_activity_view_voucher" >
+        </activity>
+        <activity
+            android:name=".ApprovePOActivity"
+            android:label="@string/title_activity_approve_po" >
+        </activity>
+        <activity
+            android:name=".ViewPOActivity"
+            android:label="@string/title_activity_view_po" >
+        </activity>
+        <activity
+            android:name=".ApproveVoucherActivity"
+            android:label="@string/title_activity_approve_voucher" >
+        </activity>
+        <activity
+            android:name=".EmployeeActivity"
+            android:label="@string/title_activity_employee" >
+        </activity>
+        <activity
+            android:name=".dept.activity.EmployeeMainActivity"
+            android:label="@string/title_activity_employee_main" >
+        </activity>
+        <activity
+            android:name=".dept.activity.NewRequisitionSearchActivity"
+            android:label="@string/title_activity_new_requisition_search" >
+        </activity>
+        <activity
+            android:name=".dept.activity.NewRequisitionSingleItemActivity"
+            android:label="@string/title_activity_new_requisition_single_item" >
+        </activity>
+        <activity
+            android:name=".dept.activity.DeptHeadMainActivity"
+            android:label="@string/title_activity_dept_head_main" >
+        </activity>
+        <activity
+            android:name=".ViewRequisitionActivity"
+            android:label="@string/title_activity_view_requisition" >
+        </activity>
+        <activity
+            android:name=".dept.activity.CartActivity"
+            android:label="@string/title_activity_cart" >
+        </activity>
+        <activity
+            android:name=".dept.activity.ChangeDepartmentDetailsActivity"
+            android:label="@string/title_activity_change_department_details" >
+        </activity>
+        <activity
+            android:name=".dept.activity.ChooseEmployeeListViewActivity"
+            android:label="@string/title_activity_choose_employee_list_view" >
+        </activity>
+        <activity
+            android:name=".dept.activity.SetDelegateActivity"
+            android:label="@string/title_activity_set_delegate" >
+        </activity>
+        <activity
+            android:name=".store.MDisbursement"
+            android:label="@string/title_activity_mdisbursement" >
+        </activity>
+        <activity
+            android:name=".store.RDepartmentBreakdown"
+            android:label="@string/title_activity_rdepartment_breakdown"
+            android:parentActivityName=".store.RetrievalActivity" >
+        </activity>
+        <activity
+            android:name=".store.RDepartmentbreakdownDetail"
+            android:label="@string/title_activity_rdepartmentbreakdown_detail"
+            android:parentActivityName=".store.RDepartmentBreakdown" >
+        </activity>
+        <activity
+            android:name=".dept.activity.EmployeeViewRequisitionActivity"
+            android:label="@string/title_activity_employee_view_requisition" >
+        </activity>
+        <activity
+            android:name=".dept.activity.DeptHeadApproveRequisitionActivity"
+            android:label="@string/title_activity_dept_head_approve_requisition" >
+        </activity>
+    </application>
+
+</manifest>

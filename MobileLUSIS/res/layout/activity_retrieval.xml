@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApprovePOActivity" >
+    
+    <TableRow
+        android:id="@+id/id_table_d_row1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:padding="10dp" >
+         
+      <TextView
+          android:id="@+id/id_txt_raisevoucher_itemcode"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:text="@string/id_stitle_retrieval_bin"
+          android:gravity="center"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/id_txt_raisevoucher_itemdesc"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:text="@string/id_stitle_retrieval_itemdesc"
+          android:gravity="center"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <TextView
+          android:id="@+id/id_r_avaliability"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/id_stitle_retrieval_avaliability"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_r_needed"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/id_stitle_retrieval_required"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_txt_raisevoucher_reason"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/id_stitle_retrieval_retrieved"
+	        android:textAppearance="?android:attr/textAppearanceMedium" >
+	    </TextView>
+	            
+    </TableRow>
+
+    <ListView
+        android:id="@+id/id_listview_rRetrieval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/id_table_d_row1" >
+
+    </ListView>
+
+    
+
+</RelativeLayout>

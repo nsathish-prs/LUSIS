@@ -1,0 +1,90 @@
+// Approve RequisitionList. Use Case.
+	List<Requisition> requisitionList = MainCon.getDeptAppRequisitionList(Convert.ToString(Session["DeptCode"]));
+
+
+// Approve Requisition. Use Case.
+	requisition = MainCon.getRequisitionByID(reqID);
+	List<RequisitionDetail> reqDetails = MainCon.getReqDetailsByReqID(reqID);
+	requisition.ApprovalStatus
+	requisition.RejectionComment
+	MainCon.setRequisition(requisition);
+
+// Change Delegate. Use Case.
+
+
+// Change DeptDetails. Use Case.
+
+	// Functions to get data to fill UI.
+	List<CollectionPoint> colPoints = MainCont.getCollectionPoints();
+	CollectionPoint cPoint = MainCont.getCurrentCollecionPoint(deptCode);
+	List<Employee> empList = MainCont.getDeptEmployees(deptCode);
+	Employee cRep = MainCont.getCurrentRepresentative(deptCode);
+
+	// Update DeptDetails.
+	public bool updateDeptDetails(String prevRep, String newRep, String newCPoint, String deptCode)
+
+
+================================================================
+
+// SUN 07-09-2014 Pending Commiting Changes to SVN
+	// Function To be Depreciated 
+	// Extra-Sub-Function... // (Return String = DelegateEmp.Name Or "None") // Benny
+	String delEmp = MainCont.getDelegateName(deptCode);
+
+
+// Change Delegate. Use Case. // MainController Functions
+
+	// Functions to get data to fill UI. // Benny
+		// Get DelegateInfo By String (deptCode) (Return List<String> = (Name, StartDate, EndDate) Or Null) // Benny
+        	List<String> delInfo = MainCont.getDelegateInfo(deptCode);
+
+		// (Return List<String> = List of DeptEmpNames For "Delegate" or "Representative" Or Null) // Benny
+		List<String> deptEmpList = MainCont.getDeptEmpNames(String deptCode, String addRole);
+
+	// Update Delegate.
+		/// Update Delegate By String (delName, deptCode, startDate, endDate) // Benny
+		MainCont.updateDelegate(delName, deptCode, startDate, endDate);
+
+		// Clear Delegate By String (deptCode) // Benny
+		MainCont.clearDelegate(String deptCode);
+
+// Change DeptDetails. Use Case. // MainController Functions
+
+	// Functions to get data to fill UI. // Benny
+		// (Return List<String> = List of CPointLocation Names Or Null) // Benny
+		List<String> colPoints = MainCont.getAllCPointsLocation();
+
+		// (Return String = CollectionPoint1.Location Or "None") // Benny
+		String cPoint = MainCont.getDeptCPointLocation(String deptCode);
+
+		// (Return List<String> = List of DeptEmpNames For "Delegate" or "Representative" Or Null) // Benny
+		List<String> empList = MainCont.getDeptEmpNames(String deptCode,String addRole);
+		String crntRep = MainCont.getDeptRepName(String deptCode, String addRole);
+
+	// Update DeptDetails.        
+		// DeptController Take 4 String, Batch Processing, (Return bool = True Or False) // Benny
+    		public bool updateDeptDetails(String prevRep, String newRep, String newCPoint, String deptCode)
+
+
+
+  //Generate Retrieval List
+
+  //Generate Disbursement List
+
+   1) public List<RetrievalByItem> receiveRetrievalByItem()//SUCHITA
+
+   2) public void generateDisb(List<DisbursementItem> disbursementItems, Dictionary<String, DisbursementList> deptDisbLists,
+   List <RetrievalByItem> retrievalItems)//SUCHITA
+
+   disbursementItems - Dept Code, ItemCode, RetrievalID, RetrievedQty, RequestedQty
+   Dictionary<DeptCode, disbursementListObject> - 
+   disbursementListObject contains - Collection point, DisbursementDate, RepresentativeID, status
+
+  3)  public void updateStatus()
+
+// Cancel Disbursement();
+   1)  public void CancelDisbursement(int selectedDisbID)
+
+//View Disbursement
+ 1) public List<DisbursementList> getDeptDisbList() --- 1 page
+ 2) public List<DisbursementItem> getDeptDisbItemList(int disbursementID) --- 2 Page

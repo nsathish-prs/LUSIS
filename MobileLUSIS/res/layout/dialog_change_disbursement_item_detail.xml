@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="50dp"
+     >    
+   
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/approve_voucher_person"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Qty" />
+        
+        <EditText
+            android:id="@+id/id_num_disb_qtyInDialog"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" >
+
+            <requestFocus />
+        </EditText>
+
+        
+
+  </TableRow>
+
+  <TableRow
+      android:id="@+id/tableRow2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tableRow1"
+      android:paddingTop="10dp" >
+        
+       <TextView
+            android:id="@+id/approve_voucher_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Reason" />
+
+      <EditText
+          android:id="@+id/id_num_disb_reasonInDialog"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="Some reason here..."
+          android:inputType="textAutoCorrect|textMultiLine"
+          android:singleLine="false"
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+
+  </TableRow>
+   
+</RelativeLayout>

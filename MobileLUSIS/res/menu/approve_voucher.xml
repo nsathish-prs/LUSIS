@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.ApproveVoucherActivity" >
+
+    <item
+        android:id="@+id/approve_voucher_menuItem"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/label_ok"/>
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <TableRow
+        android:id="@+id/id_table_d_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dp">
+         
+        <TextView
+            android:id="@+id/id_txt_retrieval_itemcode"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="1500"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_txt_retrieval_itemdesc"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <TextView
+	        android:id="@+id/id_txt_retrieval_adjqty"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceSmall" >
+	        
+	    </TextView>
+
+	    <TextView
+	        android:id="@+id/id_txt_retrieval_needed"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceSmall" >	        
+	    </TextView>
+	    
+	    <TextView
+	        android:id="@+id/id_txt_retrieval_retrieved"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceSmall" >	        
+	    </TextView>
+	            
+    </TableRow>
+
+    
+
+</RelativeLayout>

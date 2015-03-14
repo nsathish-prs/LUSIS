@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+	    <TextView
+	        android:id="@+id/id_txt_purchaseOrderStatus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/id_txt_purchaseOrder_ID"
+	        android:layout_alignBottom="@+id/id_txt_purchaseOrder_ID"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@+id/id_txt_PurchaseOrderDate"
+	        android:text="Approved"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_txt_purchaseOrder_ID"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:text="ALPA"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_txt_PurchaseOrderDate"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/id_txt_purchaseOrderStatus"
+	        android:layout_alignBottom="@+id/id_txt_purchaseOrderStatus"
+	        android:layout_toRightOf="@+id/id_txt_purchaseOrder_ID"
+	        android:text="100"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

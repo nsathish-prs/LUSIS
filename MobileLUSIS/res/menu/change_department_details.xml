@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.ChangeDepartmentDetailsActivity" >
+
+    <item
+        android:id="@+id/dept_details_cancel_menu_item"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/label_cancel"/>
+    <item android:id="@+id/dept_details_save_menu_item" android:title="@string/label_save" android:showAsAction="always"></item>
+
+</menu>

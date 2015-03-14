@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LUSIS_WEB_UI", "LUSIS_WEB_UI\LUSIS_WEB_UI.csproj", "{8A1F02AB-ADE9-40D6-815A-E356C3BF389F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LUSIS_CONTROLLER", "LUSIS_CONTROLLER\LUSIS_CONTROLLER.csproj", "{AB057168-D535-4523-9D69-BC107CDFBFEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LUSIS_EF_FACADE", "LUSIS_EF_FACADE\LUSIS_EF_FACADE.csproj", "{3BA00CEA-CECB-47F3-AA0D-3782D3B5C72C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A1F02AB-ADE9-40D6-815A-E356C3BF389F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1F02AB-ADE9-40D6-815A-E356C3BF389F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1F02AB-ADE9-40D6-815A-E356C3BF389F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1F02AB-ADE9-40D6-815A-E356C3BF389F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB057168-D535-4523-9D69-BC107CDFBFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB057168-D535-4523-9D69-BC107CDFBFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB057168-D535-4523-9D69-BC107CDFBFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB057168-D535-4523-9D69-BC107CDFBFEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA00CEA-CECB-47F3-AA0D-3782D3B5C72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA00CEA-CECB-47F3-AA0D-3782D3B5C72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA00CEA-CECB-47F3-AA0D-3782D3B5C72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA00CEA-CECB-47F3-AA0D-3782D3B5C72C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

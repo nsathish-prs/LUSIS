@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sg.edu.nus.iss.mobilelusis.EmployeeViewRequisitionActivity$PlaceholderFragment" >
+
+
+
+    <TextView
+        android:id="@+id/item_desc_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_employee"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/view_req_employee_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_desc_textview"
+        android:layout_alignRight="@+id/view_req_listtview"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/approve_req_emp_textview"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/view_req_listtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/change_dept_details_date_textview"
+        android:layout_marginTop="50dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/view_req_status_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_req_listtview"
+        android:layout_alignLeft="@+id/view_req_employee_textview"
+        android:layout_alignRight="@+id/view_req_listtview"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/view_req_submit_date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_req_status_textview"
+        android:layout_alignRight="@+id/view_req_listtview"
+
+        android:layout_marginTop="47dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/approve_req_emp_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/view_req_submit_date_textview"
+        android:layout_alignBottom="@+id/view_req_submit_date_textview"
+        android:layout_alignLeft="@+id/vr_section_label"
+        android:text="@string/label_date_submitted"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/change_dept_details_date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/approve_req_emp_textview"
+        android:layout_below="@+id/approve_req_emp_textview"
+        android:layout_marginTop="22dp"
+        android:text="@string/label_status"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

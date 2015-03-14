@@ -1,0 +1,35 @@
+
+
+2014.09.03 TODO
+1. Month from DatePicker is -1, need to add 1. [fixed 2014.09.02, also moved controller activities to controller]
+2. Need to add Logout button in Main Pages [done: 2014.09.02]
+3. Logon page: Set Employee ID textfield as first responder [done: 2014.09.02]
+4. Reject message should have correct title [done: 2014.09.02]
+5. Dept Details: Add Collection Point label [done: 2014.09.02]
+6. Dept Details: Shift textfields to be not so close to label [done: 2014.09.02]
+7. New Req: Increase height of matching items table. [done: 2014.09.02]
+8. View Req: Submission date not showing [fixed: 2014.09.02]
+9. New Req: Change to number picker [done: 2014.09.02, but ugly]
+10. New Req: Add label to Search [done: 2014.09.02]
+11. New Req: Fixed landscape hiding + and - buttons [fixed: 2014.09.02 but ugly]
+12. View Req: if Rejected, add to add message [done: 2014.09.02]
+13. New Req: If quantity is <= 0, prevent adding to cart. [done: 2014.09.02]
+14. View Req: Remove Example Action menu item to OK and bring user back to main page [done]
+
+2014.09.04
+1. Start moving dummy data to calling WCF
+	Moved Employee View Requisition to WCF [done: 2014.09.04]
+2. Refactored ViewRequisition to use controller
+	
+
+
+2014.09.08 [to do]
+1. Fix buggy Edit & Add pending items
+2. Fix drawer not re-appearing
+3. Move strings to string.xml[done]
+4. Implement Approve/Reject requisition
+5. Implement Change Dept. Details
+6. Implement Set Delegate
+
+
+

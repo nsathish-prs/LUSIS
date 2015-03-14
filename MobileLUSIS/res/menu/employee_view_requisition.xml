@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.EmployeeViewRequisitionActivity" >
+    <item android:id="@+id/view_single_req_ok_menuitem" android:showAsAction="always" android:title="@string/label_ok"></item>
+    <item android:id="@+id/view_single_req_done_menuitem" android:title="@string/label_done" android:showAsAction="always"></item>
+    <item android:id="@+id/view_single_req_edit_menuitem" android:showAsAction="always" android:title="Edit"></item>
+
+</menu>

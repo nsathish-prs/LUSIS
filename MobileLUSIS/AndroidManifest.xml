@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.edu.nus.iss.mobilelusis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher"
+        android:theme="@style/Theme.Custom" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".store.RetrievalActivity"
+            android:label="@string/title_activity_retrieval"
+            android:parentActivityName=".MenuActivity" >
+        </activity>
+        <activity
+            android:name=".DisbursementActivity"
+            android:label="@string/title_activity_disbursement"
+            android:parentActivityName=".MenuActivity" >
+        </activity>
+        <activity
+            android:name=".store.RaiseVoucherActivity"
+            android:label="@string/title_activity_raise_voucher"
+             android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".MenuActivity" >
+        </activity>
+        <activity
+            android:name=".store.ViewVoucherActivity"
+            android:label="@string/title_activity_view_voucher"
+            android:parentActivityName=".MenuActivity" >
+        </activity>
+        <activity
+            android:name=".supervisor.ApprovePurchaseOrder"
+            android:label="@string/title_activity_approve_po"
+            android:parentActivityName=".supervisor.SupervisorMenuActivity" >
+        </activity>
+        <activity
+            android:name=".supervisor.ApproveVoucherActivity"
+            android:label="@string/title_activity_approve_voucher"
+            android:parentActivityName=".supervisor.SupervisorMenuActivity" >
+        </activity>
+        <activity
+            android:name=".dept.activity.EmployeeMainActivity"
+            android:label="@string/title_activity_employee_main" >
+        </activity>
+        <activity
+            android:name=".dept.activity.NewRequisitionSearchActivity"
+            android:label="@string/title_activity_new_requisition_search" >
+        </activity>
+        <activity
+            android:name=".dept.activity.NewRequisitionSingleItemActivity"
+            android:label="@string/title_activity_new_requisition_single_item" >
+        </activity>
+        <activity
+            android:name=".dept.activity.DeptHeadMainActivity"
+            android:label="@string/title_activity_dept_head_main" >
+        </activity>
+        <activity
+            android:name=".dept.activity.CartActivity"
+            android:label="@string/title_activity_cart" >
+        </activity>
+        <activity
+            android:name=".dept.activity.ChangeDepartmentDetailsActivity"
+            android:label="@string/title_activity_change_department_details" >
+        </activity>
+        <activity
+            android:name=".dept.activity.ChooseEmployeeListViewActivity"
+            android:label="@string/title_activity_choose_employee_list_view" >
+        </activity>
+        <activity
+            android:name=".dept.activity.SetDelegateActivity"
+            android:label="@string/title_activity_set_delegate" >
+        </activity>
+        <activity
+            android:name=".store.DisbursementActivity"
+            android:parentActivityName=".MenuActivity" >
+        </activity>
+        <activity
+            android:name=".store.DisbursementDetailActivity"
+            android:parentActivityName=".store.DisbursementActivity" >
+        </activity>
+        <activity
+            android:name=".store.RDepartmentBreakdown"
+            android:parentActivityName=".store.RetrievalActivity" >
+        </activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name=".store.RDepartmentbreakdownDetail"
+            android:parentActivityName=".store.RDepartmentBreakdown" >
+        </activity>
+        <activity
+            android:name=".dept.activity.EmployeeViewRequisitionActivity"
+            android:label="@string/title_activity_employee_view_requisition" >
+        </activity>
+        <activity
+            android:name=".dept.activity.DeptHeadApproveRequisitionActivity"
+            android:label="@string/title_activity_dept_head_approve_requisition" >
+        </activity>
+        <activity
+            android:name=".supervisor.SupervisorMenuActivity"
+            android:label="@string/title_activity_supervisor_menu" >
+        </activity>
+        <activity
+            android:name=".ApprovePurchaseOrderDetail"
+            android:parentActivityName=".supervisor.ApprovePurchaseOrder" >
+        </activity>
+        <activity
+            android:name=".StoreClerkMenuActivity"
+            android:label="@string/title_activity_store_clerk_menu" >
+        </activity>
+    </application>
+
+</manifest>

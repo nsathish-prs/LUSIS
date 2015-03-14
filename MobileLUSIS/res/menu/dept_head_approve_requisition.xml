@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.DeptHeadApproveRequisitionActivity" >
+
+    <item
+        android:id="@+id/approve_req_approve_menuitem"
+        android:showAsAction="always"
+        android:title="@string/label_approve"/>
+    <item
+        android:id="@+id/approve_req_reject_menuitem"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/label_reject"/>
+    <item android:id="@+id/approve_ok_menuitem" android:title="@string/label_ok" android:showAsAction="always"></item>
+    <item android:id="@+id/approve_done" android:title="@string/label_done" android:showAsAction="always"></item>
+
+</menu>

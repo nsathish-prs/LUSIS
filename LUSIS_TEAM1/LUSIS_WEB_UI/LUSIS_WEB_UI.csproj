@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A1F02AB-ADE9-40D6-815A-E356C3BF389F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LUSIS_WEB_UI</RootNamespace>
+    <AssemblyName>LUSIS_WEB_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Master\bgimage.png" />
+    <Content Include="passwordReset.aspx" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\delegate.js" />
+    <Content Include="Scripts\Master\bootstrap.min.js" />
+    <Content Include="Scripts\Master\jquery-1.11.0.js" />
+    <Content Include="Scripts\Master\logout.js" />
+    <Content Include="Signature\AR541002.png" />
+    <Content Include="Signature\AR54101.png" />
+    <Content Include="Signature\AR54103.png" />
+    <Content Include="Signature\AR54104.png" />
+    <Content Include="Signature\BT54701.png" />
+    <Content Include="Signature\BT54702.png" />
+    <Content Include="Signature\BT54703.png" />
+    <Content Include="Signature\BT54704.png" />
+    <Content Include="Signature\CI54801.png" />
+    <Content Include="Signature\CI54802.png" />
+    <Content Include="Signature\CI54803.png" />
+    <Content Include="Signature\CI54804.png" />
+    <Content Include="Signature\CO54301.png" />
+    <Content Include="Signature\CO54302.png" />
+    <Content Include="Signature\CO54303.png" />
+    <Content Include="Signature\CO54304.png" />
+    <Content Include="Signature\CP54201.png" />
+    <Content Include="Signature\CP54202.png" />
+    <Content Include="Signature\CP54203.png" />
+    <Content Include="Signature\CP54204.png" />
+    <Content Include="Signature\EL54601.png" />
+    <Content Include="Signature\EL54602.png" />
+    <Content Include="Signature\EL54603.png" />
+    <Content Include="Signature\EL54604.png" />
+    <Content Include="Signature\EN54101.png" />
+    <Content Include="Signature\EN54102.png" />
+    <Content Include="Signature\EN54103.png" />
+    <Content Include="Signature\EN54104.png" />
+    <Content Include="Signature\ME54901.png" />
+    <Content Include="Signature\ME54902.png" />
+    <Content Include="Signature\ME54903.png" />
+    <Content Include="Signature\ME54904.png" />
+    <Content Include="Signature\RE54401.png" />
+    <Content Include="Signature\RE54402.png" />
+    <Content Include="Signature\RE54403.png" />
+    <Content Include="Signature\RE54404.png" />
+    <Content Include="Signature\ST23101.png" />
+    <Content Include="Signature\ST23104.png" />
+    <Content Include="Signature\ST23105.png" />
+    <Content Include="Signature\ZO54501.png" />
+    <Content Include="Signature\ZO54502.png" />
+    <Content Include="Signature\ZO54503.png" />
+    <Content Include="Signature\ZO54504.png" />
+    <Content Include="Styles\datepicker.css" />
+    <Content Include="Styles\Master\Error.png" />
+    <Content Include="Styles\Master\logo.jpg" />
+    <Content Include="Styles\Master\bootstrap.min.css" />
+    <Content Include="Styles\Master\sb-admin.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Views\Errorpage.aspx" />
+    <Content Include="Views\ReportViewer.aspx" />
+    <Content Include="Views\storeGenerateReport.aspx" />
+    <Content Include="Views\DeptDelegate.aspx" />
+    <Content Include="Views\DeptDetails.aspx" />
+    <Content Include="Views\DeptDisbursementDetails.aspx" />
+    <Content Include="Views\DeptDisbursementLists.aspx" />
+    <Content Include="Views\DeptHomePage.aspx" />
+    <Content Include="Views\DeptItemCatalog.aspx" />
+    <Content Include="Views\DeptNewRequisition.aspx" />
+    <Content Include="Views\DeptAppRequisitionList.aspx" />
+    <Content Include="Views\DeptAppRequisition.aspx" />
+    <Content Include="Views\DeptReports.aspx" />
+    <Content Include="Views\DeptReportview.aspx" />
+    <Content Include="Views\DeptViewRequisition.aspx" />
+    <Content Include="Views\DeptRequisitionList.aspx" />
+    <Content Include="Views\EditTasks.aspx" />
+    <Content Include="Views\storeAppVoucher.aspx" />
+    <Content Include="Views\storeAppVoucherList.aspx" />
+    <Content Include="Views\storeCheckInventory.aspx" />
+    <Content Include="Views\storeSupplier.aspx" />
+    <Content Include="Views\storeGenerateOrders.aspx" />
+    <Content Include="Views\storeHomePage.aspx" />
+    <Content Include="Views\storeNewRequisitions.aspx" />
+    <Content Include="Views\storePOAppDetails.aspx" />
+    <Content Include="Views\storePODetails.aspx" />
+    <Content Include="Views\storePOList.aspx" />
+    <Content Include="Views\storePOplaced.aspx" />
+    <Content Include="Views\storeProceedOrder.aspx" />
+    <Content Include="Views\storePurchaseRequired.aspx" />
+    <Content Include="Views\storeRetrievalList.aspx" />
+    <Content Include="Views\storeMaintainSuppliers.aspx" />
+    <Content Include="Views\storeMaintainItem.aspx" />
+    <Content Include="Views\storeVoucher.aspx" />
+    <Content Include="Views\storeVoucherList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="passwordReset.aspx.cs">
+      <DependentUpon>passwordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="passwordReset.aspx.designer.cs">
+      <DependentUpon>passwordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports_Dataset\DepartmentAmount.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DepartmentAmount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\ItemDepartmentAmount.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDepartmentAmount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\ItemDepartmentAmount1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDepartmentAmount1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\ItemDepartmentQuantity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDepartmentQuantity.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\ItemDepartmentQuantity1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDepartmentQuantity1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\ItemsMonthAmount.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemsMonthAmount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\ItemsMonthQuantity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemsMonthQuantity.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports_Dataset\LUSIS_Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LUSIS_Dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Errorpage.aspx.cs">
+      <DependentUpon>Errorpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Errorpage.aspx.designer.cs">
+      <DependentUpon>Errorpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeGenerateReport.aspx.cs">
+      <DependentUpon>storeGenerateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeGenerateReport.aspx.designer.cs">
+      <DependentUpon>storeGenerateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptDelegate.aspx.cs">
+      <DependentUpon>DeptDelegate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptDelegate.aspx.designer.cs">
+      <DependentUpon>DeptDelegate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptDetails.aspx.cs">
+      <DependentUpon>DeptDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptDetails.aspx.designer.cs">
+      <DependentUpon>DeptDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptDisbursementDetails.aspx.cs">
+      <DependentUpon>DeptDisbursementDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptDisbursementDetails.aspx.designer.cs">
+      <DependentUpon>DeptDisbursementDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptDisbursementLists.aspx.cs">
+      <DependentUpon>DeptDisbursementLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptDisbursementLists.aspx.designer.cs">
+      <DependentUpon>DeptDisbursementLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptHomePage.aspx.cs">
+      <DependentUpon>DeptHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptHomePage.aspx.designer.cs">
+      <DependentUpon>DeptHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptItemCatalog.aspx.cs">
+      <DependentUpon>DeptItemCatalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptItemCatalog.aspx.designer.cs">
+      <DependentUpon>DeptItemCatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptNewRequisition.aspx.cs">
+      <DependentUpon>DeptNewRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptNewRequisition.aspx.designer.cs">
+      <DependentUpon>DeptNewRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptAppRequisitionList.aspx.cs">
+      <DependentUpon>DeptAppRequisitionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptAppRequisitionList.aspx.designer.cs">
+      <DependentUpon>DeptAppRequisitionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptAppRequisition.aspx.cs">
+      <DependentUpon>DeptAppRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptAppRequisition.aspx.designer.cs">
+      <DependentUpon>DeptAppRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptReports.aspx.cs">
+      <DependentUpon>DeptReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptReports.aspx.designer.cs">
+      <DependentUpon>DeptReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptReportview.aspx.cs">
+      <DependentUpon>DeptReportview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptReportview.aspx.designer.cs">
+      <DependentUpon>DeptReportview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptViewRequisition.aspx.cs">
+      <DependentUpon>DeptViewRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptViewRequisition.aspx.designer.cs">
+      <DependentUpon>DeptViewRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeptRequisitionList.aspx.cs">
+      <DependentUpon>DeptRequisitionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DeptRequisitionList.aspx.designer.cs">
+      <DependentUpon>DeptRequisitionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditTasks.aspx.cs">
+      <DependentUpon>EditTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EditTasks.aspx.designer.cs">
+      <DependentUpon>EditTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeAppVoucher.aspx.cs">
+      <DependentUpon>storeAppVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeAppVoucher.aspx.designer.cs">
+      <DependentUpon>storeAppVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeAppVoucherList.aspx.cs">
+      <DependentUpon>storeAppVoucherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeAppVoucherList.aspx.designer.cs">
+      <DependentUpon>storeAppVoucherList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeCheckInventory.aspx.cs">
+      <DependentUpon>storeCheckInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeCheckInventory.aspx.designer.cs">
+      <DependentUpon>storeCheckInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeSupplier.aspx.cs">
+      <DependentUpon>storeSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeSupplier.aspx.designer.cs">
+      <DependentUpon>storeSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeGenerateOrders.aspx.cs">
+      <DependentUpon>storeGenerateOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeGenerateOrders.aspx.designer.cs">
+      <DependentUpon>storeGenerateOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeHomePage.aspx.cs">
+      <DependentUpon>storeHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeHomePage.aspx.designer.cs">
+      <DependentUpon>storeHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeNewRequisitions.aspx.cs">
+      <DependentUpon>storeNewRequisitions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeNewRequisitions.aspx.designer.cs">
+      <DependentUpon>storeNewRequisitions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storePOAppDetails.aspx.cs">
+      <DependentUpon>storePOAppDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storePOAppDetails.aspx.designer.cs">
+      <DependentUpon>storePOAppDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storePODetails.aspx.cs">
+      <DependentUpon>storePODetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storePODetails.aspx.designer.cs">
+      <DependentUpon>storePODetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storePOList.aspx.cs">
+      <DependentUpon>storePOList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storePOList.aspx.designer.cs">
+      <DependentUpon>storePOList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storePOplaced.aspx.cs">
+      <DependentUpon>storePOplaced.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storePOplaced.aspx.designer.cs">
+      <DependentUpon>storePOplaced.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeProceedOrder.aspx.cs">
+      <DependentUpon>storeProceedOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeProceedOrder.aspx.designer.cs">
+      <DependentUpon>storeProceedOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storePurchaseRequired.aspx.cs">
+      <DependentUpon>storePurchaseRequired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storePurchaseRequired.aspx.designer.cs">
+      <DependentUpon>storePurchaseRequired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeRetrievalList.aspx.cs">
+      <DependentUpon>storeRetrievalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeRetrievalList.aspx.designer.cs">
+      <DependentUpon>storeRetrievalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeMaintainSuppliers.aspx.cs">
+      <DependentUpon>storeMaintainSuppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeMaintainSuppliers.aspx.designer.cs">
+      <DependentUpon>storeMaintainSuppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeMaintainItem.aspx.cs">
+      <DependentUpon>storeMaintainItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeMaintainItem.aspx.designer.cs">
+      <DependentUpon>storeMaintainItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeVoucher.aspx.cs">
+      <DependentUpon>storeVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeVoucher.aspx.designer.cs">
+      <DependentUpon>storeVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\storeVoucherList.aspx.cs">
+      <DependentUpon>storeVoucherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\storeVoucherList.aspx.designer.cs">
+      <DependentUpon>storeVoucherList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LUSIS_CONTROLLER\LUSIS_CONTROLLER.csproj">
+      <Project>{AB057168-D535-4523-9D69-BC107CDFBFEF}</Project>
+      <Name>LUSIS_CONTROLLER</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LUSIS_EF_FACADE\LUSIS_EF_FACADE.csproj">
+      <Project>{3BA00CEA-CECB-47F3-AA0D-3782D3B5C72C}</Project>
+      <Name>LUSIS_EF_FACADE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports_Dataset\LUSIS_Dataset.xsc">
+      <DependentUpon>LUSIS_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports_Dataset\LUSIS_Dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LUSIS_Dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports_Dataset\LUSIS_Dataset.xss">
+      <DependentUpon>LUSIS_Dataset.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports_Dataset\DepartmentAmount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DepartmentAmount.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Dataset\ItemDepartmentAmount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemDepartmentAmount.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Dataset\ItemDepartmentAmount1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemDepartmentAmount1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Dataset\ItemDepartmentQuantity.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemDepartmentQuantity.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Dataset\ItemDepartmentQuantity1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemDepartmentQuantity1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Dataset\ItemsMonthAmount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemsMonthAmount.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Dataset\ItemsMonthQuantity.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ItemsMonthQuantity.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/LUSIS_WEB_UI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

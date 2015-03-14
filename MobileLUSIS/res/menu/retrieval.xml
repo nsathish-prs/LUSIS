@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.RetrievalActivity" >
+    <item android:id="@+id/id_action_r_finalize" android:title="@string/action_title_r_finalize"></item>
+
+</menu>

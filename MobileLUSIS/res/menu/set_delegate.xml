@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.SetDelegateActivity" >
+
+    <item
+        android:id="@+id/delegate_save_menu_item"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/label_save"/>
+    <item android:id="@+id/delegate_cancel_item" android:title="@string/label_cancel" android:showAsAction="always"></item>
+    <item android:id="@+id/delegate_clear_item" android:title="@string/clear_delegate" android:showAsAction="always"></item>
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <!-- <TextView
+        android:id="@+id/id_txt_raisevoucher_colorindicator"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:background="#110000" /> -->
+    
+    <TableRow
+        android:id="@+id/id_table_d_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp" >
+        
+           
+
+        <TextView
+            android:id="@+id/id_txt_raisevoucher_itemcode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="A0012"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/id_txt_raisevoucher_itemdesc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pencil 2b with Eraser"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+            android:id="@+id/id_txt_raisevoucher_adjqty"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:nextFocusRight="@+id/id_txt_raisevoucher_reason"
+            android:text="0">       
+
+       </TextView>
+ 
+ 
+       <TextView 
+            android:id="@+id/id_txt_raisevoucher_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"/>
+       
+
+       
+    </TableRow>
+
+</RelativeLayout>

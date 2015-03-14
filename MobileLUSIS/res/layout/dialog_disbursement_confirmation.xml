@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <TextView
+        android:id="@+id/approve_voucher_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Enter Employee Credentials" />
+     
+    <EditText
+        android:id="@+id/id_txt_disbursement_approval_empID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:nextFocusRight="@+id/id_txt_disbursement_approval_detail"
+        android:layout_below="@id/approve_voucher_person"
+        android:hint="Employee ID"
+        android:inputType="textPersonName" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/id_txt_disbursement_approval_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_below="@id/id_txt_disbursement_approval_empID"
+        android:hint="@string/title_disb_confirmation_password"
+        android:inputType="textPassword">    
+        
+    </EditText>
+
+
+   
+
+</RelativeLayout>

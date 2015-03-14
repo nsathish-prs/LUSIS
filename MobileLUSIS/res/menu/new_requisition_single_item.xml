@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.NewRequisitionSingleItemActivity" >
+
+    <item
+        android:id="@+id/new_req_single_item_add_to_cart_menuitem"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Add to Cart"/>
+    <item android:id="@+id/new_req_single_item_cancel_menuitem" android:title="Cancel" android:showAsAction="always"></item>
+
+</menu>

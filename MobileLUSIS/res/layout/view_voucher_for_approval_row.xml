@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow
+        android:id="@+id/id_table_d_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp">
+         
+        <TextView
+        android:id="@+id/id_txt_viewVoucher_voucherID"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="oo1/xxxx/14"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_txt_viewVoucher_qtyAdjusted"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:text="-20"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/id_txt_viewVoucher_approvedBy"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="Sathishy"
+	        android:textAppearance="?android:attr/textAppearanceMedium" >	        
+	    </TextView>
+
+	    <Spinner
+	        android:id="@+id/decision_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	            
+    </TableRow>
+    
+</RelativeLayout>

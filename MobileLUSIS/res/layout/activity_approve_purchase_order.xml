@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sg.edu.nus.iss.mobilelusis.supervisor.ApprovePurchaseOrder" >
+
+    <TextView
+        android:id="@+id/approve_voucher_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:text="Orders Placed to the Suppliers:" />
+
+    <TableRow
+        android:id="@+id/id_table_d_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/approve_voucher_person"
+        android:layout_marginTop="30dp"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/id_txt_raisevoucher_itemdesc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Order ID"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/id_r_avaliability"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/id_txt_raisevoucher_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/id_listview_po"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_table_d_row1" >
+
+    </ListView>
+
+</RelativeLayout>

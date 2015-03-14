@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.mobilelusis.CartActivity" >
+    <item android:id="@+id/cancel_cart_submission_menuitem" android:title="@string/label_cancel" android:showAsAction="always"></item>
+    <item android:id="@+id/submit_new_req_menuitem" android:title="@string/label_submit" android:showAsAction="always"></item>
+    <item android:id="@+id/add_item_from_cart_menuItem" android:title="@string/add_more_items_btn_label" android:showAsAction="ifRoom"></item>
+
+</menu>

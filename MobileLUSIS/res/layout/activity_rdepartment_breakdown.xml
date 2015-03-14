@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.edu.nus.iss.mobilelusis.store.RDepartmentBreakdown" >
+    
+	    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/approve_voucher_person"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id_stitle_retrieval_bin"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+	        android:id="@+id/id_txt_retrieval_binNo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/approve_voucher_person"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+    </TableRow>
+    
+    
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tableRow1">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id_stitle_retrieval_avaliability"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+	        android:id="@+id/id_txt_retrieval_avaliability"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/textView5"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+    </TableRow>
+    
+    
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tableRow3">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id_stitle_retrieval_required"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+	        android:id="@+id/id_txt_retrieval_required"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/textView8"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+    </TableRow>
+    
+    
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tableRow4">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id_stitle_retrieval_retrieved"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+	        android:id="@+id/id_txt_retrieval_retrieved"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/textView9"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tableRow5">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/id_stitle_retrieval_by_department"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </TableRow>
+	
+    
+    
+	<TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow6"
+        android:padding="5dp"
+        android:background="#cccccc">
+
+	         <TextView
+    	        android:id="@+id/id_stitle_rdeptBreakDown_deptCode"
+    	        android:layout_width="100dp"
+    	        android:layout_height="wrap_content"
+    	        android:gravity="center"
+    	        android:text="Code"
+    	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    	    <TextView
+    	        android:id="@+id/id_stitle_rdeptBreakdown_deptName"
+    	        android:layout_width="200dp"
+    	        android:layout_height="wrap_content"
+    	        android:text="Name"
+    	        android:gravity="center"
+    	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    	    <TextView
+    	        android:id="@+id/id_stitle_r_needed"
+    	        android:layout_width="150dp"
+    	        android:layout_height="wrap_content"
+    	        android:text="Item Required"
+    	        android:gravity="center"
+    	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    	    <TextView
+    	        android:id="@+id/id_stitle_num_rdeptBreakdown_retrieved"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:text="Item Retrieved"
+    	        android:gravity="center"
+    	        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+        
+    </TableRow>
+    
+	
+	<TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow7">
+
+	        <ListView
+		        android:id="@+id/id_listview_rdepartment_breakdown"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		    </ListView> 
+        
+    </TableRow>
+
+</RelativeLayout>
